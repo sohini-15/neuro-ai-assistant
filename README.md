@@ -27,3 +27,4 @@ npm install
 npm run dev
 
 ## 📌 Notes
+This is a prototype focused on accessible AI support for online communication.
