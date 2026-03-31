@@ -1,21 +1,27 @@
 # AI Communication Assistant for Neurodivergent Users
 
 ## 🚀 Overview
-An AI-powered system that helps users understand tone, intent, and conversational risks in online interactions.
+An AI-powered communication support system that helps users interpret tone, intent, and conversational risks in online interactions.
+
+## 🌐 Live Demo
+[Try the prototype here](https://neuro-ai-assistant-wheat.vercel.app/)
 
 ## 🧠 Features
-- Tone and intent detection
-- Safety flagging
+- Tone and intent support
+- Safety-aware guidance
 - Response pacing assistance
-- Real-time feedback for conversations
+- Scenario-based interaction flows
+- Real-time conversational feedback
 
 ## ⚙️ Tech Stack
 - Next.js
 - TypeScript
 - Tailwind CSS
-- OpenAI / Gemini API
+- React
+- Lucide React
 
 ## 📸 Demo
+
 ### Home Page
 ![Home](public/screenshots/home.png)
 
@@ -32,6 +38,3 @@ An AI-powered system that helps users understand tone, intent, and conversationa
 ```bash
 npm install
 npm run dev
-
-## 📌 Notes
-This is a prototype focused on accessible AI support for online communication. This repository contains a simplified version of a larger research prototype.
