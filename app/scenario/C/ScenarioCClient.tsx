@@ -18,11 +18,11 @@ function timeLabelFixed(t: string) {
 }
 
 export default function ScenarioCClient({
-  pid = "TEST_PID",
-  returnUrl = "",
+  sessionId = "DEMO_SESSION",
+  exitUrl = "",
 }: {
-  pid?: string;
-  returnUrl?: string;
+  sessionId?: string;
+  exitUrl?: string;
 }) {
   // ---------------- SAFE CLOCK (no Date.now) ----------------
   const clockRef = useRef(0);

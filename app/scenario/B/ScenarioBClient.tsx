@@ -18,11 +18,11 @@ function timeLabelFixed(t: string) {
 }
 
 export default function ScenarioBClient({
-  pid = "TEST_PID",
-  returnUrl = "",
+  sessionId = "DEMO_SESSION",
+  exitUrl = "",
 }: {
-  pid?: string;
-  returnUrl?: string;
+  sessionId?: string;
+  exitUrl?: string;
 }) {
   // ---------------- “clock” (no Date.now / performance.now) ----------------
   const clockRef = useRef(0);
@@ -137,7 +137,7 @@ function requestSend() {
     if (!replyScheduledRef.current) {
         replyScheduledRef.current = true;
 
-        const seed = [...pid].reduce((acc, ch) => acc + ch.charCodeAt(0), 0);
+        const seed = [...sessionId].reduce((acc, ch) => acc + ch.charCodeAt(0), 0);
         const replyDelayTicks = 200 + (seed % 240);
         const startTick = clockRef.current;
 

@@ -25,11 +25,11 @@ function nowTimeLabel()
 export default function ScenarioAClient(
     {
         sessionId = "DEMO_SESSION",
-        returnUrl = "",
+        exitUrl = "",
     }:
     {
         sessionId?: string;
-        returnUrl?: string;
+        exitUrl?: string;
     }
 )
 

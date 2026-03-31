@@ -3,14 +3,14 @@ import ScenarioAClient from "./ScenarioAClient";
 export default async function Page({
   searchParams,
 }: {
-  searchParams: Promise<{ pid?: string; return?: string }>;
+  searchParams: Promise<{ sessionId?: string; return?: string }>;
 }) {
   const params = await searchParams;
 
   return (
     <ScenarioAClient
-      pid={params?.pid ?? "TEST_PID"}
-      returnUrl={params?.return ?? ""}
+      sessionId={params?.sessionId ?? "DEMO_SESSION"}
+      exitUrl={params?.return ?? ""}
     />
   );
 }
